@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="cursor-dot-outline"></div>  
+    <div class="cursor-dot"></div>
+
+<!--<div class="cursor"></div> -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Meu Portfólio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                    <li class="nav-item">
+                        <button id="darkModeToggle" class="btn btn-outline-light"><i class="fa fa-moon"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="parallax">
+        <div class="overlay"></div>
+        <div id="particles-js"></div> 
+        <div class="content">
+            <h1>Jader Trindade</h1>
+            <p>Estudante e Desenvolvedor</p>
+            
+            <div class="scroll-indicator">
+                <i class="fa fa-chevron-down"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="fade-in">Sobre Mim</h2>
+            <p class="fade-in">Estudante do curso Técnico de Desenvolvimento de Sistemas, com experiência prática como Jovem Aprendiz Administrativo. Busco constantemente expandir meus conhecimentos em computação, ao mesmo tempo em que aplico habilidades organizacionais e de gestão adquiridas no ambiente administrativo. Motivado por desafios e sempre em busca de oportunidades para crescer profissionalmente no campo da tecnologia.</p>
+            <div class="skills">
+                <div class="skill fade-in">
+                    <h3>HTML</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;">90%</div>
+                    </div>
+                </div>
+                <div class="skill fade-in">
+                    <h3>CSS</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 85%;">85%</div>
+                    </div>
+                </div>
+                <div class="skill fade-in">
+                    <h3>JavaScript</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 75%;">75%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="fade-in">Meus Projetos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="project-card fade-in">
+                        <img src="src/0mr4EIc.png" alt="Projeto 1">
+                        <h3>BCR | Beach Cleanner Robot</h3>
+                        <p>
+                            O projeto Beach Cleaner Robot (BCR) visa resolver o problema do lixo nas praias, que afeta a economia, o turismo e o meio ambiente. A solução proposta é um sistema automatizado de limpeza composto por dois módulos: locomoção e coleta de lixo. O BCR se move com uma esteira e usa uma peneira para coletar o lixo, que é então transportado para uma caixa. Pode ser operado como um quadriciclo dirigido ou por controle remoto. O objetivo é auxiliar, e não substituir, o trabalho dos agentes de limpeza pública, melhorando a eficiência e reduzindo custos a longo prazo.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card fade-in">
+                        <img src="src/QvAr1HM.png" alt="Projeto 2">
+                        <h3>Projeto E-Commerce</h3>
+                        <p>O projeto "E-Shop" é um aplicativo móvel desenvolvido para plataforma Android utilizando Java e XML no Android Studio. Ele oferece uma plataforma de comércio eletrônico onde os usuários podem visualizar e comprar produtos e serviços. O aplicativo inclui funcionalidades de login seguro, cadastro de usuários, exibição de catálogo de produtos e serviços com filtros de pesquisa, adição de itens ao carrinho de compras e visualização de detalhes dos produtos. O design é moderno, com uma paleta de cores predominantemente roxa sobre um fundo preto, proporcionando uma experiência visual agradável e intuitiva para os usuários.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card fade-in">
+                        <img src="src/dj7csGv.png" alt="Projeto 3">
+                        <h3>Projeto Prospere</h3>
+                        <p>Projeto feito no Figma durante a Marotona Tech.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="fade-in">Contato</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/j-tms/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/trindadej44/" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/home" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Jader Trindade. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script> 
+    <script src="script.js"></script>
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeInElements = document.querySelectorAll('.fade-in');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            fadeInElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+
+        var cursor = {
+    delay: 8,
+    _x: 0,
+    _y: 0,
+    endX: (window.innerWidth / 2),
+    endY: (window.innerHeight / 2),
+    cursorVisible: true,
+    cursorEnlarged: false,
+    $dot: document.querySelector('.cursor-dot'),
+    $outline: document.querySelector('.cursor-dot-outline'),
+    
+    init: function() {
+        // Set up element sizes
+        this.dotSize = this.$dot.offsetWidth;
+        this.outlineSize = this.$outline.offsetWidth;
+        
+        this.setupEventListeners();
+        this.animateDotOutline();
+    },
+    
+//     updateCursor: function(e) {
+//         var self = this;
+        
+//         console.log(e)
+        
+//         // Show the cursor
+//         self.cursorVisible = true;
+//         self.toggleCursorVisibility();
+
+//         // Position the dot
+//         self.endX = e.pageX;
+//         self.endY = e.pageY;
+//         self.$dot.style.top = self.endY + 'px';
+//         self.$dot.style.left = self.endX + 'px';
+//     },
+    
+    setupEventListeners: function() {
+        var self = this;
+        
+        // Anchor hovering
+        document.querySelectorAll('a').forEach(function(el) {
+            el.addEventListener('mouseover', function() {
+                self.cursorEnlarged = true;
+                self.toggleCursorSize();
+            });
+            el.addEventListener('mouseout', function() {
+                self.cursorEnlarged = false;
+                self.toggleCursorSize();
+            });
+        });
+        
+        // Click events
+        document.addEventListener('mousedown', function() {
+            self.cursorEnlarged = true;
+            self.toggleCursorSize();
+        });
+        document.addEventListener('mouseup', function() {
+            self.cursorEnlarged = false;
+            self.toggleCursorSize();
+        });
+  
+  
+        document.addEventListener('mousemove', function(e) {
+            // Show the cursor
+            self.cursorVisible = true;
+            self.toggleCursorVisibility();
+
+            // Position the dot
+            self.endX = e.pageX;
+            self.endY = e.pageY;
+            self.$dot.style.top = self.endY + 'px';
+            self.$dot.style.left = self.endX + 'px';
+        });
+        
+        // Hide/show cursor
+        document.addEventListener('mouseenter', function(e) {
+            self.cursorVisible = true;
+            self.toggleCursorVisibility();
+            self.$dot.style.opacity = 1;
+            self.$outline.style.opacity = 1;
+        });
+        
+        document.addEventListener('mouseleave', function(e) {
+            self.cursorVisible = true;
+            self.toggleCursorVisibility();
+            self.$dot.style.opacity = 0;
+            self.$outline.style.opacity = 0;
+        });
+    },
+    
+    animateDotOutline: function() {
+        var self = this;
+        
+        self._x += (self.endX - self._x) / self.delay;
+        self._y += (self.endY - self._y) / self.delay;
+        self.$outline.style.top = self._y + 'px';
+        self.$outline.style.left = self._x + 'px';
+        
+        requestAnimationFrame(this.animateDotOutline.bind(self));
+    },
+    
+    toggleCursorSize: function() {
+        var self = this;
+        
+        if (self.cursorEnlarged) {
+            self.$dot.style.transform = 'translate(-50%, -50%) scale(0.75)';
+            self.$outline.style.transform = 'translate(-50%, -50%) scale(1.5)';
+        } else {
+            self.$dot.style.transform = 'translate(-50%, -50%) scale(1)';
+            self.$outline.style.transform = 'translate(-50%, -50%) scale(1)';
+        }
+    },
+    
+    toggleCursorVisibility: function() {
+        var self = this;
+        
+        if (self.cursorVisible) {
+            self.$dot.style.opacity = 1;
+            self.$outline.style.opacity = 1;
+        } else {
+            self.$dot.style.opacity = 0;
+            self.$outline.style.opacity = 0;
+        }
+    }
+}
+
+cursor.init();
+
+    </script>
+    
+</body>
+</html>
